@@ -5,8 +5,7 @@ function isLegal(user) {
     return false;
 }
 function greet(user) {
+    var _a;
     console.log("Hello my Name is: ", user.fName);
-    console.log(user === null || user === void 0 ? void 0 : user.email);
+    console.log((_a = user.email) !== null && _a !== void 0 ? _a : "No email provided");
 }
-console.log(isLegal({ fName: "Ajay", lName: "Bhaskar", age: 20, email: "dummy@gmail.com" }));
-greet({ fName: "pranav", lName: "velaga", age: 21 });

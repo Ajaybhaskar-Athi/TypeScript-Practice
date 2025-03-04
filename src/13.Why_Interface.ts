@@ -33,10 +33,10 @@ function isLegal(user:User){
 
 function greet(user:User){
     console.log("Hello my Name is: ",user.fName);
-    console.log(user?.email);
+    console.log(user.email ??"No email provided");
 }
 
-console.log(isLegal({fName:"Ajay",lName:"Bhaskar",age:20,email:"dummy@gmail.com"}));
-greet({fName:"pranav",lName:"velaga",age:21});
+// console.log(isLegal({fName:"Ajay",lName:"Bhaskar",age:20,email:"dummy@gmail.com"}));
+// greet({fName:"pranav",lName:"velaga",age:21});
 
 
